@@ -1,4 +1,4 @@
-package com.gmail.gorbasenko245.entity;
+package com.gmail.gorbasenko245.entity.entity;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -12,57 +12,48 @@ public class User {
 
     private String name;
     private String surname;
-    private String nameOfCompany;
+    private String company;
     private String country;
     private String city;
     private String region;
     private String phone;
     private String email;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "account_id")
-    private Account account;
+
 
     @OneToMany(mappedBy = "userOrder", cascade = CascadeType.ALL)
-    private List<Order> orders = new ArrayList<Order>();
+    private List<Invoice> invoices = new ArrayList<Invoice>();
 
-    @OneToMany(mappedBy = "userMessage", cascade = CascadeType.ALL)
-    private List<Message> messages = new ArrayList<Message>();
-
-
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<UserIP> IPList = new ArrayList<UserIP>();
 
     public User() {
     }
 
-    public User(String name, String surname, String nameOfCompany, String country, String city, String region, String phone, String email) {
+    public User(String name, String surname, String company, String country, String city, String region, String phone, String email) {
         this.name=name;
         this.surname = surname;
-        this.nameOfCompany = nameOfCompany;
+        this.company=company;
         this.country = country;
         this.city = city;
         this.region = region;
         this.phone = phone;
         this.email = email;
     }
-    public void addOrder(Order order){
-        if(!orders.contains(order)){
-            orders.add(order);
-            order.setUserOrder(this);
+    public void addOrder(Invoice invoice){
+        if(!invoices.contains(invoice)){
+            invoices.add(invoice);
+            invoice.setUserOrder(this);
         }
-    }
-    public void addMessage(Message message){
-        if(!messages.contains(message)){
-            messages.add(message);
-            message.setUserMessage(this);
-        }
-    }
-    public Account getAccount() {
-        return account;
     }
 
-    public void setAccount(Account account) {
-        this.account = account;
+    public void addIP(UserIP userIP){
+        if(!IPList.contains(userIP)){
+            IPList.add(userIP);
+            userIP.setUser(this);
+        }
     }
+
 
     public Long getId() {
         return id;
@@ -88,12 +79,28 @@ public class User {
         this.surname = surname;
     }
 
-    public String getNameOfCompany() {
-        return nameOfCompany;
+    public String getCompany() {
+        return company;
     }
 
-    public void setNameOfCompany(String nameOfCompany) {
-        this.nameOfCompany = nameOfCompany;
+    public void setCompany(String company) {
+        this.company = company;
+    }
+
+    public List<Invoice> getInvoices() {
+        return invoices;
+    }
+
+    public void setInvoices(List<Invoice> invoices) {
+        this.invoices = invoices;
+    }
+
+    public List<UserIP> getIPList() {
+        return IPList;
+    }
+
+    public void setIPList(List<UserIP> IPList) {
+        this.IPList = IPList;
     }
 
     public String getCountry() {
@@ -136,12 +143,13 @@ public class User {
         this.email = email;
     }
 
+
     @Override
     public String toString() {
         return "Клієнт - " +
                 "ім'я- " + name + '\'' +
                 ", прізвище- " + surname + '\'' +
-                ", назва компанії- " + nameOfCompany + '\'' +
+                ", назва компанії- " + company + '\'' +
                 ", держава- " + country + '\'' +
                 ", місто- " + city + '\'' +
                 ", регіон- " + region + '\'' +

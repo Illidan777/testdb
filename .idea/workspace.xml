@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="420acb79-9b1a-4181-abdf-277ae67f6d2e" name="Default Changelist" comment="" />
+    <list default="true" id="420acb79-9b1a-4181-abdf-277ae67f6d2e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gmail/gorbasenko245/entity/entity/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gmail/gorbasenko245/entity/entity/Invoice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gmail/gorbasenko245/entity/entity/InvoiceStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gmail/gorbasenko245/entity/entity/UserIP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gmail/gorbasenko245/entity/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gmail/gorbasenko245/entity/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/gorbasenko245/entity/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gmail/gorbasenko245/entity/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gmail/gorbasenko245/entity/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gmail/gorbasenko245/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/gorbasenko245/entity/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gmail/gorbasenko245/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/gorbasenko245/entity/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gmail/gorbasenko245/entity/Account.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gmail/gorbasenko245/entity/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gmail/gorbasenko245/entity/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gmail/gorbasenko245/entity/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gmail/gorbasenko245/entity/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gmail/gorbasenko245/entity/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gmail/gorbasenko245/entity/User.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +46,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1d5XPAQPWdi12SPA1BCgSouQCph" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -32,18 +54,22 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/gmail/gorbasenko245/entity" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/gmail/gorbasenko245/entity/entity" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15479723" />
     <property name="project.structure.side.proportion" value="0.20502092" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.gmail.gorbasenko245.entity" />
       <recent name="com.gmail.gorbasenko245.entity.Utils" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\JavaProject\testdb\src\main\java\com\gmail\gorbasenko245\entity\entity" />
+      <recent name="C:\JavaProject\testdb\src\main\java\com\gmail\gorbasenko245\entity" />
       <recent name="C:\JavaProject\testdb\src\main\resources" />
       <recent name="C:\JavaProject\testdb\src\main\java\com\gmail\gorbasenko245" />
     </key>
@@ -78,12 +104,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591715900821</updated>
-      <workItem from="1591715904809" duration="6594000" />
+      <workItem from="1591715904809" duration="14749000" />
+      <workItem from="1592055905377" duration="6221000" />
     </task>
+    <task id="LOCAL-00001" summary="commit">
+      <created>1591782908743</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591782908743</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="183" key="#Inspections" timestamp="1591718073179">
@@ -98,30 +137,34 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1591716061313" />
-    <state x="765" y="241" key="#com.intellij.ide.util.MemberChooser" timestamp="1591780234840">
+    <state x="765" y="241" key="#com.intellij.ide.util.MemberChooser" timestamp="1592060415464">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="765" y="241" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1591780234840" />
-    <state x="428" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1591781481790">
+    <state x="765" y="241" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1592060415464" />
+    <state x="428" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1592060907870">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="428" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1591781481790" />
-    <state width="1877" height="169" key="GridCell.Tab.0.bottom" timestamp="1591782784804">
+    <state x="428" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1592060907870" />
+    <state x="585" y="119" key="CommitChangelistDialog2" timestamp="1591782908077">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="169" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1591782784804" />
-    <state width="1877" height="169" key="GridCell.Tab.0.center" timestamp="1591782784804">
+    <state x="585" y="119" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1591782908077" />
+    <state width="1877" height="496" key="GridCell.Tab.0.bottom" timestamp="1592066111168">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="169" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1591782784804" />
-    <state width="1877" height="169" key="GridCell.Tab.0.left" timestamp="1591782784803">
+    <state width="1877" height="496" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1592066111168" />
+    <state width="1877" height="496" key="GridCell.Tab.0.center" timestamp="1592066111168">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="169" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1591782784803" />
-    <state width="1877" height="169" key="GridCell.Tab.0.right" timestamp="1591782784804">
+    <state width="1877" height="496" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1592066111168" />
+    <state width="1877" height="496" key="GridCell.Tab.0.left" timestamp="1592066111168">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="169" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1591782784804" />
+    <state width="1877" height="496" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1592066111168" />
+    <state width="1877" height="496" key="GridCell.Tab.0.right" timestamp="1592066111168">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="496" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1592066111168" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1591780486938">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -138,5 +181,13 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1591780486938" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1591782918215">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1591782918215" />
+    <state x="656" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1592056094507">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="656" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1592056094507" />
   </component>
 </project>

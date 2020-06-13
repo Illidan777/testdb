@@ -1,6 +1,8 @@
-package com.gmail.gorbasenko245.entity;
+package com.gmail.gorbasenko245.entity.entity;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 public class Product {
@@ -19,9 +21,12 @@ public class Product {
     @Transient
     private Integer quantity;
 
-    @ManyToOne
-    @JoinColumn(name = "order_id")
-    private Order order;
+    @ManyToMany(mappedBy = "products")
+    private Set<Invoice> invoices = new HashSet<Invoice>();
+
+    @ManyToOne(cascade =  CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "cart_id")
+    private Cart cart;
 
     public Product() {
     }
@@ -35,6 +40,12 @@ public class Product {
         this.priceKg = priceKg;
         this.pricePack = pricePack;
         this.quantity = quantity;
+    }
+    public void addOrder(Invoice invoice){
+        if(!invoices.contains(invoice)){
+            invoices.add(invoice);
+            invoice.getProducts().add(this);
+        }
     }
 
     public Long getId() {
@@ -108,6 +119,23 @@ public class Product {
     public void setQuantity(Integer quantity) {
         this.quantity = quantity;
     }
+
+    public Set<Invoice> getInvoices() {
+        return invoices;
+    }
+
+    public void setInvoices(Set<Invoice> invoices) {
+        this.invoices = invoices;
+    }
+
+    public Cart getCart() {
+        return cart;
+    }
+
+    public void setCart(Cart cart) {
+        this.cart = cart;
+    }
+
 
     @Override
     public String toString() {
